@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "start": "nodemon src/index.js"
+    },
+    "dependencies": {
+        "apollo-server": "^3.6.4",
+        "csv-parse": "^5.0.4",
+        "graphql": "^16.3.0",
+        "nodemon": "^2.0.15"
+    }
+}

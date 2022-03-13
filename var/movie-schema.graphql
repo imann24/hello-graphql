@@ -1,0 +1,23 @@
+type Movie {
+    "title of the movie"
+    title: String!
+    "list of genres the movie belongs to"
+    genres: [String]
+    "summary of movie"
+    description: String
+    "director of movie"
+    director: String
+    "actors in the movie"
+    actors: [String]
+    "year the movie was released"
+    year: Int
+}
+
+type Query {
+    "return list of all movies"
+    allMovies: [Movie]
+    "return movies released in year"
+    moviesByYear(year: Int!): [Movie]
+    "return movie which matches title"
+    movie(title: String!): Movie
+}
